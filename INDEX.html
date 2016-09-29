@@ -1,0 +1,224 @@
+<html>
+<style>
+.center {
+                    margin: auto;
+                    width: 50%;
+                    padding:10px;}
+					
+.footer-social { float: right; margin-top:5px;}
+.footer-social li { display: inline; text-decoration:none;}
+
+h1:hover {
+transition: all 0.4s ease;
+  transform: scaleY(-1);
+}
+                
+</style>
+			<!--
+	
+		<meta http-equiv="refresh" content="3; url=bhaskar2.html" /> -->
+	
+		<link rel="stylesheet" href="flipclock.css">
+		<link rel="stylesheet" href="circle.css">
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+		<script src="flipclock.js"></script>
+	<head>
+		<nav style="position:fixed; top:0px; right:10%; left:10%;color:white; face:arial; font-size:30px; z-index:100; background-image:url('background12.png'); border-radius:50px;"><center> <b>The Annual Technical Fest @ CIT Kokrajhar </b></center></nav>
+	</head>
+	<body background="twi.gif">
+	
+
+      
+	
+	
+							<script type="text/javascript">
+
+								function moveleft()
+								{
+								document.getElementById('image').style.position="absolute";
+								document.getElementById('image').style.left="0";
+								}
+								function moveback()
+								{
+								document.getElementById('image').style.position="absolute";
+								}
+
+
+								</script>
+
+	
+	
+							<script type="text/javascript">
+
+						/*
+						Simple Image Trail script- By JavaScriptKit.com
+						Visit http://www.javascriptkit.com for this script and more
+						This notice must stay intact
+						*/
+
+						var trailimage=["abcd.gif", 100, 99] //image path, plus width and height
+						var offsetfrommouse=[10,-20] //image x,y offsets from cursor position in pixels. Enter 0,0 for no offset
+						var displayduration=0 //duration in seconds image should remain visible. 0 for always.
+
+						if (document.getElementById || document.all)
+						document.write('<div id="trailimageid" style="position:absolute;visibility:visible;left:0px;top:0px;width:1px;height:1px"><img src="'+trailimage[0]+'" border="0" width="'+trailimage[1]+'px" height="'+trailimage[2]+'px"></div>')
+
+						function gettrailobj(){
+						if (document.getElementById)
+						return document.getElementById("trailimageid").style
+						else if (document.all)
+						return document.all.trailimagid.style
+						}
+
+						function truebody(){
+						return (!window.opera && document.compatMode && document.compatMode!="BackCompat")? document.documentElement : document.body
+						}
+
+						function hidetrail(){
+						gettrailobj().visibility="hidden"
+						document.onmousemove=""
+
+						}
+
+						function followmouse(e){
+						var xcoord=offsetfrommouse[0]
+						var ycoord=offsetfrommouse[1]
+						if (typeof e != "undefined"){
+						xcoord+=e.pageX
+						ycoord+=e.pageY
+						}
+						else if (typeof window.event !="undefined"){
+						xcoord+=truebody().scrollLeft+event.clientX
+						ycoord+=truebody().scrollTop+event.clientY
+						}
+						var docwidth=document.all? truebody().scrollLeft+truebody().clientWidth : pageXOffset+window.innerWidth-15
+						var docheight=document.all? Math.max(truebody().scrollHeight, truebody().clientHeight) : Math.max(document.body.offsetHeight, window.innerHeight)
+						if (xcoord+trailimage[1]+3>docwidth || ycoord+trailimage[2]> docheight)
+						gettrailobj().display="none"
+						else 
+						gettrailobj().display=""
+						gettrailobj().left=xcoord+"px"
+						gettrailobj().top=ycoord+"px"
+						}
+
+						document.onmousemove=followmouse
+
+						if (displayduration>0)
+						setTimeout("hidetrail()", displayduration*1000)
+
+						</script>
+							
+	
+	
+	
+	
+	
+	
+	
+	<br><br>
+	<h1 style="font-size:80; text-shadow: #EEEE00 0 0 10px, #FF0000 10px 10px 10px;}">
+	<center><font color="white" face="arial"><b>TECHCRACY 2K16</b></font></center></h1>
+	<h2 style="padding-left:55%; margin-top:-50px;"><center><font color="white" size="5" face="arial"><i> coming soon.... </i></font></center></h2>
+
+	
+	
+	
+	<div class="center">
+	<div class="clock" style="margin:2em;"></div>
+	<div class="message"></div>
+	<h3><center> <font color="white" face="monotype corsiva"><b>DAYS &nbsp;&nbsp;&nbsp;o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HOURS&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MINUTES &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SECONDS</b></font></center></h3>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MINUTES &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SECONDS</b></font></center></h3>
+	
+	<script type="text/javascript">
+		var clock;
+		
+		$(document).ready(function() {
+			var clock;
+
+			clock = $('.clock').FlipClock({
+		        clockFace: 'DailyCounter',
+		        autoStart: false,
+		        callbacks: {
+		        	stop: function() {
+		        		$('.message').html('The clock has stopped!')
+		        	}
+		        }
+		    });
+				    
+		    clock.setTime(2858959);
+		    clock.setCountdown(true);
+		    clock.start();
+
+		});
+	</script>
+	</div>
+	
+	
+	<div id="container" style="margin-top:-15%; margin-bottom:-15%; onclick="moveRight();">    
+
+    <div id="main">
+      <div id="outer-circle">
+        <div id="inner-circle">
+          <div id="center-circle">
+            <div id="content"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  
+  </div>
+	
+	
+	
+	
+	<div class="row" style="margin-top:35%;">
+				<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+				
+						<table width=100% bgcolor="light purple" style=" position:absolute; left:0px; z-index:1000;"> 
+							<tr>
+							<td bgcolor=gray><center><font color=white><b> TECHCRACY </b><i> 2K16</i> @CIT,kokrajhar</font></center>
+							
+							</td>
+							</tr>
+							<tr>
+							<td>
+							
+							
+							<div class="footer-social">
+							<li><a href="https://www.facebook.com/CitTechcracy/">
+							<img src='facebook.png' style="width:30px; height:30px;" />
+							</a>
+							</li>
+							<li><a href="https://twitter.com/search?q=techcracy&src=typd">
+							<img src='twitter.png' style="width:30px; height:30px;"  />
+							</a>
+							</li>
+							<li><a href="https://www.youtube.com/results?search_query=techcracy+">
+							<img src='youtube.png' style="width:30px; height:30px;"  />
+							</a>
+							</li>
+							<li><a href="https://www.instagram.com/explore/tags/techcracy/?hl=en">
+							<img src='instagram.png' style="width:30px; height:30px;"  />
+							</a>
+							</li>
+							
+							
+							</td>
+							</tr>
+							<tr>
+							<td>
+							
+							<center><font color=white size=2> &copy All right reserved @CIT,Kokrajhar &nbsp;&nbsp; </font></center>
+							</td>
+							<tr>
+						</table>
+						
+				</div>
+			</div>
+	</body>
+</html>
